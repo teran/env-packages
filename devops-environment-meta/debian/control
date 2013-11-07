@@ -1,0 +1,15 @@
+Source: devops-environment-meta
+Build-Depends: coreutils, debhelper, git
+Section: extra
+Priority: optional
+Maintainer: Igor Shishkin <ishishkin@mirantis.com>
+
+Package: devops-environment-meta
+Section: extra
+Priority: optional
+Architecture: any
+Depends: libvirt-bin, python-libvirt, python-django, python-virtualenv
+Replaces: libvirt-bin
+Description: Meta package to setup devops environment
+ .
+
