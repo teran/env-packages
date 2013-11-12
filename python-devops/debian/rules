@@ -9,12 +9,15 @@
 # Uncomment this to turn on verbose mode.
 
 export DH_VERBOSE=1
+export DESTDIR="`pwd`/debian/devops-environment-meta"
 
 build:
+	rm -rvf src/devops
 	git clone git://github.com/Mirantis/devops.git src/devops
 
 clean:
 	dh_clean
+	rm -rvf src/devops
 
 %:
 	dh $@
