@@ -1,0 +1,14 @@
+Source: python-devops
+Build-Depends: coreutils, debhelper, git
+Section: extra
+Priority: optional
+Maintainer: Igor Shishkin <ishishkin@mirantis.com>
+
+Package: python-devops
+Section: extra
+Priority: optional
+Architecture: any
+Depends: libvirt-bin, python-libvirt, python-django, python-virtualenv
+Description: Meta package to setup devops environment
+ .
+
