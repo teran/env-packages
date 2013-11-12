@@ -1,5 +1,8 @@
 #!/usr/bin/make -f
 
 install:
-	install -m644 $(CURDIR)/src/libvirt/libvirtd.conf	$(DESTDIR)/etc/libvirt/
-	install -m644 $(CURDIR)/src/libvirt/libvlirt-bin	$(DESTDIR)/etc/default/
+	install -d											$(DESTDIR)/etc/libvirt
+	install -m644 $(CURDIR)/src/libvirt/libvirtd.conf   $(DESTDIR)/etc/libvirt/
+	install -d											$(DESTDIR)/etc/default
+	install -m644 $(CURDIR)/src/libvirt/libvirt-bin	$(DESTDIR)/etc/default/
+
