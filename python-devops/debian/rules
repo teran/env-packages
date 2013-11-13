@@ -9,7 +9,7 @@
 # Uncomment this to turn on verbose mode.
 
 export DH_VERBOSE=1
-export DESTDIR="`pwd`/debian/devops-environment-meta"
+export DESTDIR="`pwd`/debian/python-devops"
 
 build:
 	rm -rvf src/devops
