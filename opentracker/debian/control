@@ -1,0 +1,14 @@
+Source: opentracker
+Build-Depends: cvs, libowfat-dev, make
+Section: extra
+Priority: optional
+Maintainer: Igor Shishkin <ishishkin@mirantis.com>
+
+Package: opentracker
+Section: extra
+Priority: optional
+Architecture: any
+Depends: libowfat0
+Description: Meta package to setup devops environment
+ .
+
