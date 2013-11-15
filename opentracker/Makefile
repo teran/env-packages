@@ -10,5 +10,5 @@ clean:
 install:
 	install -d												$(DESTDIR)/usr/bin
 	install -d												$(DESTDIR)/usr/share/pyshared
-	install -m755	$(CURDIR)/src/opentracker/opentracker	$(DESTDIR)/usr/bin/
+	install -m755	$(CURDIR)/opentracker/opentracker		$(DESTDIR)/usr/bin/
 	install -m644	$(CURDIR)/src/opentracker.conf			$(DESTDIR)/etc/
