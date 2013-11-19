@@ -1,0 +1,6 @@
+#!/bin/bash
+
+useradd --system --create-home --shell /bin/nologin --home-dir /var/lib/opentracker opentracker
+
+invoke-rc.d restart opentracker
+

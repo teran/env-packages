@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use Ubic::Service::SimpleDaemon;
+
+my $LOGDIR = '/var/log/opentracker';
+
+Ubic::Service::SimpleDaemon->new({
+    bin             => "/usr/sbin/opentracker -f /etc/opentracker.conf",
+    stdout          => "$LOGDIR/restart.log",
+    stderr          => "$LOGDIR/restart.log",
+    ubic_log        => "$LOGDIR/ubic.log",
+    daemon_user     => "opentracker",
+    daemon_group    => "opentracker",
+});
+
