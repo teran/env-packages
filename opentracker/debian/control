@@ -8,7 +8,7 @@ Package: opentracker
 Section: extra
 Priority: optional
 Architecture: any
-Depends: libowfat0
+Depends: libowfat0, ubic
 Description: Meta package to setup devops environment
  .
 
