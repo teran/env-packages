@@ -2,5 +2,7 @@
 
 useradd --system --create-home --shell /bin/nologin --home-dir /var/lib/opentracker opentracker
 
+chown -R opentracker:opentracker /var/log/opentracker
+
 invoke-rc.d opentracker restart
 
