@@ -12,6 +12,7 @@ install:
 	install -d											$(DESTDIR)/usr/share/python-django-seed
 	install -d											$(DESTDIR)/etc/uwsgi/apps-available
 	install -d											$(DESTDIR)/etc/uwsgi/apps-enabled
-	install -m644	$(CURDIR)/src/seed.yaml				$(DESTDIR)/etc/uwsgi/apps-available/seed.yaml
+	install -m644	$(CURDIR)/src/uwsgi.yaml			$(DESTDIR)/etc/uwsgi/apps-available/seed.yaml
+	install -m644	$(CURDIR)/src/nginx.conf			$(DESTDIR)/etc/nginx/sites-available/seed.conf
 	cp -r 			$(CURDIR)/src/seed					$(DESTDIR)/usr/share/python-django-seed/
 

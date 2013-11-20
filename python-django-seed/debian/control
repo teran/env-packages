@@ -8,7 +8,7 @@ Package: python-django-seed
 Section: extra
 Priority: optional
 Architecture: any
-Depends: python-django, uwsgi, uwsgi-plugin-python, python-transmissionrpc
+Depends: python-django, uwsgi, uwsgi-plugin-python, python-transmissionrpc, nginx, nginx-full, nginx-common
 Description: Meta package to setup devops environment
  .
 
