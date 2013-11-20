@@ -5,6 +5,7 @@ pre-build:
 	$(MAKE) -C opentracker -f Makefile
 
 clean:
+	dh_clean
 	rm -rvf $(CURDIR)/opentracker
 
 install:
