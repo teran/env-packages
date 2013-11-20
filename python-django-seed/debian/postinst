@@ -1,0 +1,8 @@
+#!/bin/bash
+
+useradd --system --create-home --shell /bin/nologin --home-dir /var/lib/seed seed
+
+ln -s /etc/uwsgi/apps-available/seed.yaml /etc/uwsgi/apps-enabled/seed.yaml
+
+invoke-rc.d uwsgi restart
+

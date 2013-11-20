@@ -1,0 +1,14 @@
+Source: python-django-seed
+Build-Depends: coreutils, debhelper, git
+Section: extra
+Priority: optional
+Maintainer: Igor Shishkin <ishishkin@mirantis.com>
+
+Package: python-django-seed
+Section: extra
+Priority: optional
+Architecture: any
+Depends: python-django, uwsgi, uwsgi-plugin-python, python-transmissionrpc
+Description: Meta package to setup devops environment
+ .
+
