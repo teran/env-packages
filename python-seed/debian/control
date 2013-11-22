@@ -20,3 +20,10 @@ Depends: python-transmissionrpc (>= 0.11), transmission-daemon, python-requests
 Description: Client for python-django-seed
  .
 
+Package: python-seed-cleaner
+Section: extra
+Priority: optional
+Architecture: any
+Depends: python-transmissionrpc (>= 0.11), transmission-daemon
+Description: Cleaner for old data in transmission daemon
+ .

@@ -11,6 +11,7 @@
 export DH_VERBOSE=1
 export WEBAPP_DESTDIR="`pwd`/debian/python-django-seed"
 export CLIENT_DESTDIR="`pwd`/debian/python-seed-client"
+export CLEANER_DRSTDIR="`pwd`/debian/python-seed-cleaner"
 
 %:
 	dh $@
